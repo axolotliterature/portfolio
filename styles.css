@@ -93,13 +93,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     font-size: 0.9em;
     color: #a0b4b4;
   }
-  
-  .name-title {
-    color: #F3F4ED;
-    font-family: 'Nothing You Could Do', Verdana, Tahoma, sans-serif;
-    font-size: 48px;
-    font-weight: normal;
-  }
 
   .headroom {
     padding-top: 20px;
@@ -137,6 +130,18 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     display: none;
   }
 
+
+  /* --------------------------------------------------------- SPECIAL MODIFIERS */
+
+  /* Specific to main name/title on index */
+  .name-title {
+    color: #F3F4ED;
+    font-family: 'Nothing You Could Do', Verdana, Tahoma, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+  }
+
+  /* creates bottom border for div sections */
   .separator {
     width: 100%;
     border-bottom: 2px solid #C06014;
