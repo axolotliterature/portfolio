@@ -262,8 +262,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 
   #portrait {
     display: block;
-    margin: 0px auto;
-    /* margin-left: 10px; */
+    margin: 25px auto 0px auto;
     width: 100%;
     height: auto;
     max-width: 340px;
@@ -275,11 +274,16 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   #myImg {
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
+    background: black;
+    width: 65%;
+    height: auto;
   }
   
   #myImg:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
   }
   
   .modal {
