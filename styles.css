@@ -104,7 +104,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
       padding-bottom: 20px;
   }
   
-  .small-butt {
+  .small-gap {
     padding-bottom: 6px;
   }
   
@@ -160,6 +160,9 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   .mobileNav {
     display: block;
     overflow: hidden;
+    position: fixed;
+    top: 0px;
+    height: 48px;
     width: 100%;
     margin: 0 auto;
     background-color: #536162;
@@ -168,6 +171,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     font-family: Tahoma, Verdana, sans-serif;
     font-weight: bold;
     box-shadow: 0px 1px 2px 0px #5b6a6b;
+    z-index: 1;
   }
 
   .mobileNav a {
@@ -272,7 +276,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   /* --------------------------------------------------------- JS ELEMENT STYLES */
 
   #myImg {
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
     background: black;
@@ -286,30 +290,25 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     filter: brightness(60%);
   }
   
-  .modal {
+  /* .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-  }
+  } */
+
+  /* NOTES 
+  overflow: auto enables scroll if needed
+  redundant background color tags if browser unable to interpret rgba */
   
-  .modal-content {
+  /* .modal-content {
     margin: auto;
     display: block;
     width: 80%;
@@ -357,13 +356,13 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
   
-  @media only screen and (max-width: 700px) {
+  /* @media only screen and (max-width: 700px) {
     .modal-content {
       width: 100%;
     }
-  }
+  } */
 
   /* --------------------------------------------------------- FOOTER -------- */
 
@@ -373,12 +372,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   }
 
   /* --------------------------------------------------------- MEDIA QUERIES */
-
-  /* TABLET */
-
-  /* @media screens and (min-width: 600px) {
-
-  } */
 
 
   /* DESKTOP */
@@ -391,11 +384,13 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     .main-nav {
       display: block;
       position: fixed;
+      height: 48px;
       width: 100%;
       top: 0;
       text-align: center;
       background-color: #536162;
       list-style-type: none;
+      z-index: 1;
     }
 
     .main-nav li {
