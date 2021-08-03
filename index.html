@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header id="top">
-        <h1 class="display-none">Andrew Hansen</h1>
+    <a class="anchor" id="top"></a>
+    <header>
         <nav>
             <div class="main-nav">
                 <!-- <div class="nav-left"> -->
@@ -25,7 +25,7 @@
                     <!-- <li class="nav-left"><img src="img/hansen-logo.png" alt="Hansen Hexagon Logo"></li>
                     <li class="nav-left"><h1>Andrew Hansen</h1></li> -->
                     <li><a href="#top">Home</a></li>
-                    <li><a href="web-dev.html">Web Development</a></li>
+                    <li><a href="#webDev">Web Development</a></li>
                     <li><a href="video.html">Video Editing</a></li>
                     <li><a href="contact.html">Contact</a></li>                    
                 </ul>
@@ -50,11 +50,14 @@
 
     <div class="wrapper">
 
-        <div id="aboutMe" class="container separator">
-            
-            <div id="item-one">
-                <h1 class="name-title">Andrew Hansen</h1>
+        <div class="container separator">
 
+            <div>
+                <img id="portrait" src="img/portrait.jpg" alt="Portrait of myself">
+                <h1 class="name-title">Andrew Hansen</h1>
+            </div>
+            
+            <div id="aboutLeft">
                 <!-- <h1 class="page-title pad-bottom">About Me:</h1>  -->
 
                 <p>Discerning | Anticipates Challenges | Fueled by curiosity</p>
@@ -65,7 +68,7 @@
                 <h2>Education</h2>
                 <p>Bachelor of Arts (BA) | Washington State University</p>
                 <p>Digital Technology and Culture | Web and Game Development</p>
-                <p class="small-gap">Expected graduation Spring 2023</p>
+                <p class="pad-bottom">Expected graduation Spring 2023</p>
                 <h3>Former Education</h3>
                 <ul>
                     <li class="small">AAS - Information Technology - Whatcom Community College</li>
@@ -73,99 +76,75 @@
                 </ul>
             </div>
 
-            <div id="item-two">
-                <img id="portrait" src="img/portrait.jpg" alt="Portrait of myself">
+            <div id="aboutRight" class="contact">
+                <h2>Contact</h2>
+                <h3><a href="mailto:andrew.hansen1@wsu.edu">Email</a></h3>
+                <h3><a href="https://github.com/porth-OS/" target="_blank">Github</a></h3>
+                <h3>Find me on <a href="https://www.linkedin.com/in/andrewhansen-dev/" target="_blank">Linkedin</a></h3>
+                <h3 class="pad-bottom"><a href="documents/Andrew Hansen - CV Resume.pdf" target="_blank">View my CV Resume</a></h3>
             </div>
 
         </div>
 
-        <div id="webDev" class="separator">
+        <a class="anchor" id="webDev"></a>
 
-            <div class="headroom center web-dev-show">
+        <div class="separator">
+
+            <div class="project">
                 <h2>MapBox API</h2>
-                <p>This project utilized the <a href="https://www.mapbox.com/about/company/" target="_blank">Mapbox</a> API to create a       guided geographical tour of the real-world locations used to create Hogwarts Castle in the Harry Potter film franchise</p>
-                    <a href="https://dtc-wsuv.org/ahansen20/map/" target="_blank">
-                        <img class="myImages" id="myImg" src="img/ahansenmapbox.png" alt="Harry Potter Mapbox Tour"> </a>
-                <!-- <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div> -->
+                <p>This project utilized the <a href="https://www.mapbox.com/about/company/" target="_blank">Mapbox</a> API to create a guided geographical tour of the real-world locations used to create Hogwarts Castle in the Harry Potter film franchise</p>
+                <a href="https://dtc-wsuv.org/ahansen20/map/" target="_blank">
+                    <img class="myImages" id="myImg" src="img/ahansenmapbox.png" alt="Harry Potter Mapbox Tour"> </a>
               </div>
 
-              <div class="headroom center web-dev-show">
+              <div class="project">
                 <h2>Processing Generated Video Game</h2>
                 <p>This project utilizes <a href="https://p5js.org/" target="_blank">P5.js</a> Javascript processing to create a basic "space shooter" inspired video game that is continuously generated</p>
                 <a href="https://dtc-wsuv.org/ahansen20/final477/" target="_blank">
                     <img class="myImages" id="myImg" src="img/ahansenp5jsgame.png" alt="Space Shooter Game" width="300" height="200"></a>
-                <!-- <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div> -->
-              </div>
+            </div>
 
 
-            <div class="headroom center web-dev-show">
+            <div class="project">
                 <h2>Coffee Capstone</h2>
                 <p>This web site addresses the danger posed to coffee plantations and workers' livelihoods by climate change. 
                     This capstone project was written to showcase a proficiency in Adobe Illustrator and Final Cut Pro, and housed in basic HTML and CSS</p>
-                    <a href="https://dtc-wsuv.org/ahansen20/Capstone%20Website/" target="_blank">
-                        <img class="myImages" id="myImg" src="img/ahansencoffee.png" alt="Coffee: Endangered Species" width="300" height="200"></a>
-                <!-- <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div> -->
-              </div>
+                <a href="https://dtc-wsuv.org/ahansen20/Capstone%20Website/" target="_blank">
+                    <img class="myImages" id="myImg" src="img/ahansencoffee.png" alt="Coffee: Endangered Species" width="300" height="200"></a>
+            </div>
       
-              <div class="headroom center web-dev-show">
+            <div class="project">
                 <h2>Narrative Skrollr Project</h2>
                 <p>This project utilizes the <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a> paralax scrolling Javascript plugin 
                     to create a narrative experience introducing the viewer to The Outsider, from the Dishonored series</p>
-                    <a href="https://dtc-wsuv.org/ahansen20/narrative/" target="_blank">
-                        <img class="myImages" id="myImg" src="img/ahansennarrative.png" alt="Narrative: The Outsider: Footer" width="300" height="200"></a>
-                <!-- <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div> -->
-              </div>
+                <a href="https://dtc-wsuv.org/ahansen20/narrative/" target="_blank">
+                    <img class="myImages" id="myImg" src="img/ahansennarrative.png" alt="Narrative: The Outsider: Footer" width="300" height="200"></a>
+            </div>
       
-                <div class="headroom center web-dev-show">
-                  <h2>Orange Chicken Recipe</h2>
-                  <p>This web site utilizes basic HTML and CSS to showcase responsive design through the implementation of media queries and CSS Grid</p>
-                  <a href="https://dtc-wsuv.org/ahansen20/recipe/" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansenrecipe.png" alt="Recipe: Full Page" width="300" height="200"></a>
-                  <!-- <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                  </div> -->
-                </div>
+            <div class="project">
+                <h2>Orange Chicken Recipe</h2>
+                <p>This web site utilizes basic HTML and CSS to showcase responsive design through the implementation of media queries and CSS Grid</p>
+                <a href="https://dtc-wsuv.org/ahansen20/recipe/" target="_blank">
+                <img class="myImages" id="myImg" src="img/ahansenrecipe.png" alt="Recipe: Full Page" width="300" height="200"></a>
+            </div>
         </div>
 
-        <div class="contact center separator">
+        <div class="contact separator">
             <h1 class="pad-bottom">Contact</h1>
-            <div>       
+            <div>
+   
+                <h3><a href="mailto:andrew.hansen1@wsu.edu">Email</a></h3>
+                <h3><a href="https://github.com/porth-OS/" target="_blank">Github</a></h3>
+                <h3>Find me on <a href="https://www.linkedin.com/in/andrewhansen-dev/" target="_blank">Linkedin</a></h3>
+                <h3 class="pad-bottom"><a href="documents/Andrew Hansen - CV Resume.pdf" target="_blank">View my CV Resume</a></h3>
+
                 <h2>Thank you</h2>
                 <p>For your interest in my portfolio</p>
                 <p class="pad-bottom"></p>
-
-                <h2><a href="#top">Return to top</a></h2>
     
-                <h2 class="pad-bottom">Reach me by email: 
-                <a href="mailto:andrew.hansen1@wsu.edu">andrew.hansen1@wsu.edu</a></h2>
-                <h2 class="pad-bottom">Find me on <a href="https://www.linkedin.com/in/andrew-hansen-63851357/">Linkedin</a></h2>
-    
-                <h2></h2>
-                <p></p>
+                <h3><a href="#top">Return to top</a></h3>
     
             </div>
-    
-    
-    
-    
     
     
         </div>
@@ -180,37 +159,6 @@
 
 
     <script>
-        // // create references to the modal...
-        // let modal = document.getElementById('myModal');
-        // // to all images -- note I'm using a class!
-        // let images = document.getElementsByClassName('myImages');
-        // // the image in the modal
-        // let modalImg = document.getElementById("img01");
-        // // and the caption in the modal
-        // let captionText = document.getElementById("caption");
-
-        // // Go through all of the images with our custom class
-        // for (let i = 0; i < images.length; i++) {
-        // let img = images[i];
-        // // and attach our click listener for this image.
-        // img.onclick = function(evt) {
-        //     modal.style.display = "block";
-        //     modalImg.src = this.src;
-        //     captionText.innerHTML = this.alt;
-        // }
-        // }
-
-        // let span = document.getElementsByClassName("close")[0];
-
-        // span.onclick = function() {
-        // modal.style.display = "none";
-        // }
-
-        // window.onclick = function(event) {
-        // if (event.target == modal) {
-        //     modal.style.display = "none";
-        // }
-        // }
 
     </script>
 
