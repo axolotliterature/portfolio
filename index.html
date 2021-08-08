@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <a class="anchor" id="top"></a>
     <header>
         <nav>
             <div class="main-nav">
@@ -24,14 +23,14 @@
                 <ul>
                     <!-- <li class="nav-left"><img src="img/hansen-logo.png" alt="Hansen Hexagon Logo"></li>
                     <li class="nav-left"><h1>Andrew Hansen</h1></li> -->
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#webDev">Web Development</a></li>
-                    <li><a href="video.html">Video Editing</a></li>
-                    <li><a href="contact.html">Contact</a></li>                    
+                    <li><a href="#top">About</a></li>
+                    <li><a href="#webDev">Projects</a></li>
+                    <!-- <li><a href="video.html">Video Editing</a></li> -->
+                    <li><a href="#contact">Contact</a></li>                    
                 </ul>
             </div>
 
-            <div class="mobileNav">
+            <!-- <div class="mobileNav">
                 <div class="dropdown">
                     <button class="dropbtn">
                         <img src="img/hamburgerorange.png" alt="Navigation Drop Down">
@@ -43,31 +42,31 @@
                         <a href="contact.html">Contact</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </nav>
     </header>
 
+    <!-- page navigation anchor -->
+    <a class="anchor" id="top"></a>
 
-    <div class="wrapper">
+    <div class="wrapper scroll-type-y-mandatory">
 
-        <div class="container separator">
+        <div class="container">
 
-            <div>
+            <div id="aboutTop" class="scroll child">
                 <img id="portrait" src="img/portrait.jpg" alt="Portrait of myself">
                 <h1 class="name-title">Andrew Hansen</h1>
             </div>
             
-            <div id="aboutLeft">
+            <div id="aboutLeft" class="child">
                 <!-- <h1 class="page-title pad-bottom">About Me:</h1>  -->
 
                 <p>Discerning | Anticipates Challenges | Fueled by curiosity</p>
-                <p>I pride myself on organization and attention to detail</p>
-                <p class="pad-bottom">I try to always keep an open mind and live in search of constant self improvement</p>
-
+                <p class="pad-bottom">Studying Web and Mobile Development at Washington State University with an expected graduation in Spring 2023. I enjoy the challenges and rewards of coding new projects. Driven by curiosity, I am always yearning for fresh knowledge and new experiences, and live in search of constant self improvement.</p>
 
                 <h2>Education</h2>
                 <p>Bachelor of Arts (BA) | Washington State University</p>
-                <p>Digital Technology and Culture | Web and Game Development</p>
+                <p>Digital Technology and Culture | Web and Mobile Development</p>
                 <p class="pad-bottom">Expected graduation Spring 2023</p>
                 <h3>Former Education</h3>
                 <ul>
@@ -76,7 +75,7 @@
                 </ul>
             </div>
 
-            <div id="aboutRight" class="contact">
+            <div id="aboutRight" class="child">
                 <h2>Contact</h2>
                 <h3><a href="mailto:andrew.hansen1@wsu.edu">Email</a></h3>
                 <h3><a href="https://github.com/porth-OS/" target="_blank">Github</a></h3>
@@ -86,18 +85,21 @@
 
         </div>
 
+        <!-- page navigation anchor -->
         <a class="anchor" id="webDev"></a>
 
-        <div class="separator">
+        <div class="separator"></div>
 
-            <div class="project">
+        <div class="container">
+
+            <div class="project scroll-snap">
                 <h2>MapBox API</h2>
                 <p>This project utilized the <a href="https://www.mapbox.com/about/company/" target="_blank">Mapbox</a> API to create a guided geographical tour of the real-world locations used to create Hogwarts Castle in the Harry Potter film franchise</p>
                 <a href="https://dtc-wsuv.org/ahansen20/map/" target="_blank">
                     <img class="myImages" id="myImg" src="img/ahansenmapbox.png" alt="Harry Potter Mapbox Tour"> </a>
               </div>
 
-              <div class="project">
+              <div class="project scroll-snap">
                 <h2>Processing Generated Video Game</h2>
                 <p>This project utilizes <a href="https://p5js.org/" target="_blank">P5.js</a> Javascript processing to create a basic "space shooter" inspired video game that is continuously generated</p>
                 <a href="https://dtc-wsuv.org/ahansen20/final477/" target="_blank">
@@ -105,7 +107,7 @@
             </div>
 
 
-            <div class="project">
+            <div class="project scroll-snap">
                 <h2>Coffee Capstone</h2>
                 <p>This web site addresses the danger posed to coffee plantations and workers' livelihoods by climate change. 
                     This capstone project was written to showcase a proficiency in Adobe Illustrator and Final Cut Pro, and housed in basic HTML and CSS</p>
@@ -113,7 +115,7 @@
                     <img class="myImages" id="myImg" src="img/ahansencoffee.png" alt="Coffee: Endangered Species" width="300" height="200"></a>
             </div>
       
-            <div class="project">
+            <div class="project scroll-snap">
                 <h2>Narrative Skrollr Project</h2>
                 <p>This project utilizes the <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a> paralax scrolling Javascript plugin 
                     to create a narrative experience introducing the viewer to The Outsider, from the Dishonored series</p>
@@ -121,7 +123,7 @@
                     <img class="myImages" id="myImg" src="img/ahansennarrative.png" alt="Narrative: The Outsider: Footer" width="300" height="200"></a>
             </div>
       
-            <div class="project">
+            <div class="project scroll-snap">
                 <h2>Orange Chicken Recipe</h2>
                 <p>This web site utilizes basic HTML and CSS to showcase responsive design through the implementation of media queries and CSS Grid</p>
                 <a href="https://dtc-wsuv.org/ahansen20/recipe/" target="_blank">
@@ -129,8 +131,13 @@
             </div>
         </div>
 
-        <div class="contact separator">
-            <h1 class="pad-bottom">Contact</h1>
+        <div class="separator"></div>
+
+        <!-- page navigation anchor -->
+        <a class="anchor" id="contact"></a>
+
+        <div class="container contact scroll-snap">
+            <h1 class="pad-bottom">AndrewHansen.toSource()</h1>
             <div>
    
                 <h3><a href="mailto:andrew.hansen1@wsu.edu">Email</a></h3>
