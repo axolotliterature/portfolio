@@ -33,31 +33,22 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     }	 
     /* ----------------------------------------------------- end reset */
 
+  /* --------------------------------------------------------- VARIABLES------ */
 
-
-  /* NOTES/COLORS
-
-  Dark Gray #222831
-  Mid Gray #393E46
-  Yellow #FFD369
-  Cream/white #EEEEEE
-
-  OR
-
-  White       #F3F4ED
-  Light Grey  #536162
-  Dark Grey   #424642
-  Orange      #C06014 | df8943
-  
-  */
+  :root {
+    --darkBlue: #181D31;
+    --lightGreen: #678983;
+    --darkBeige: #E6DDC4;
+    --lightBeige: #F0E9D2;
+  }
 
   /* --------------------------------------------------------- MAIN ---------- */
 
   body {
-    color: #F3F4ED;
+    color: var(--lightBeige);
     font-size: 20px;
     font-family: Helvetica, Arial, sans-serif;
-    background: #424642;
+    background: var(--darkBlue);
 }
 
 .wrapper {
@@ -66,7 +57,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     min-width: 400px;
     margin: 50px auto 20px auto;
     padding: 10px;
-    border: 2px solid rgb(98, 98, 98);
+    border: 2px solid var(--lightGreen);
     border-radius: 10px;
     /* background-color: rgba(36, 38, 49, 0.6); */
 }
@@ -91,7 +82,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   p, li {
     font-family: Tahoma, Verdana, sans-serif;
     font-size: 0.9em;
-    color: #a0b4b4;
+    color: var(--darkBeige);
   }
   
   .pad-bottom {
@@ -103,11 +94,11 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   }
   
   a {
-    color: white;
+    color: var(--lightGreen);
   }
   
   a:hover {
-    color: #df8943;
+    color: var(--lightBeige);
   }
 
 
@@ -115,7 +106,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 
   /* Specific to main name/title on index */
   .name-title {
-    color: #F3F4ED;
+    color: var(--lightGreen);
     font-family: 'Nothing You Could Do', Verdana, Tahoma, sans-serif;
     font-size: 48px;
     font-weight: normal;
@@ -126,7 +117,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   .separator {
     width: 80%;
     height: 10px;
-    border-bottom: 2px solid #df8943;
+    border-bottom: 2px solid var(--lightGreen);
     margin: 0px auto;
   }
 
@@ -138,8 +129,12 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     scroll-snap-align: start;
   } */
 
+  .italic {
+    font-style: italic;
+  }
 
-  /* --------------------------------------------------------- NAVIGATION ---- */
+
+  /* --------------------------------------------------------- MOBILE NAVIGATION ---- */
 
   .main-nav {
     display: none;
@@ -153,7 +148,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     height: 48px;
     width: 100%;
     margin: 0 auto;
-    background-color: #424642;
+    background-color: var(--darkBlue);
     font-size: 0.7em;
     letter-spacing: 0.2em;
     font-family: Tahoma, Verdana, sans-serif;
@@ -238,6 +233,44 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     visibility: hidden;
   }
 
+  /* -------------------------------------------------DESKTOP NAV ------------------- */
+
+  @media screen and (min-width: 768px) {
+    .mobileNav {
+        display: none;
+    }
+
+    .main-nav {
+      display: block;
+      position: fixed;
+      height: 48px;
+      width: 100%;
+      top: 0;
+      background-color: var(--darkBlue);
+      list-style-type: none;
+      z-index: 1;
+    }
+
+    .main-nav li {
+      float: right;
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .main-nav a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 120ms ease-in-out;
+      border-radius: 5px;
+    }
+
+    .main-nav a:hover {
+      background-color: var(--darkBeige);
+      color: var(--darkBlue);
+    }
+  }
+
 
 
   /* --------------------------------------------------------- HOME PAGE ----- */
@@ -304,7 +337,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     /* margin: 100% 0; */
     margin: 30px 0;
     text-align: center;
-    background-color: rgba(121, 120, 120, 0.404);
+    background-color: rgba(45, 48, 93, 0.246);
     border-radius: 25px;
   }
 
@@ -335,46 +368,4 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   footer {
     text-align: center;
     font-size: 0.6em;
-  }
-
-  /* --------------------------------------------------------- MEDIA QUERIES */
-
-
-  /* DESKTOP */
-
-  @media screen and (min-width: 768px) {
-    .mobileNav {
-        display: none;
-    }
-
-    .main-nav {
-      display: block;
-      position: fixed;
-      height: 48px;
-      width: 100%;
-      top: 0;
-      background-color: #424642c9;
-      list-style-type: none;
-      z-index: 1;
-    }
-
-    .main-nav li {
-      float: right;
-      display: inline;
-      margin: 0 20px;
-    }
-
-    .main-nav a {
-      display: inline-block;
-      text-decoration: none;
-      padding: 10px;
-      transition: background 120ms ease-in-out;
-    }
-
-    .main-nav a:hover {
-      background-color: #323332;
-      color: #df8943;
-      border-radius: 5px;
-      /* border-bottom: 1px solid #df8943; */
-    }
   }
