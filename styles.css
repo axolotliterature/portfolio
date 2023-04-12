@@ -246,7 +246,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     visibility: hidden;
   }
 
-  /* -------------------------------------------------DESKTOP NAV ------------------- */
+  /* ------------------------------------------------- DESKTOP NAV ------------------- */
 
   @media screen and (min-width: 768px) {
     .mobileNav {
@@ -331,36 +331,74 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   #portrait {
     display: block;
     float: left;
-    margin: 25px auto 0px auto;
+    margin: 0px 40px 0px auto;
     width: 100%;
     height: auto;
     max-width: 340px;
     border-radius: 20%;
     -webkit-box-shadow:
-      12px 0 var(--lightGreen),
-      24px 0 var(--darkBeige),
-      36px 0 var(--lightBeige);
+      10px 8px var(--lightGreen),
+      20px 16px var(--darkBeige),
+      30px 24px var(--lightBeige);
     box-shadow:
-      12px 0 var(--lightGreen),
-      24px 0 var(--darkBeige),
-      36px 0 var(--lightBeige);
+      10px 8px var(--lightGreen),
+      20px 16px var(--darkBeige),
+      30px 24px var(--lightBeige);
   }
+
+  /* --------------------------------------------------------- PROJECTS ----- */
 
   #projects-container {
     text-align: center;
     margin: 0px auto;
+    padding-top: 20px;
   }
 
-  .project {
-    padding: 15px 0;
-    /* margin: 100% 0; */
-    margin: 30px 0;
+  .button-value {
+    border: 2px solid var(--lightGreen);
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: var(--darkBeige);
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: var(--lightGreen);
+    color: var(--darkBlue);
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 1em;
+    padding: 2em 0;
+  }
+
+  .card {
+    background-color:rgba(45, 48, 93, 0.246);
+    max-width: 40em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+
+  .card:hover {
+    background-color: rgba(65, 70, 131, 0.459);
+  }
+
+  .image-container {
     text-align: center;
-    background-color: rgba(45, 48, 93, 0.246);
-    border-radius: 25px;
   }
 
-  #myImg {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+
+  .myImg {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
@@ -369,21 +407,32 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     height: auto;
   }
   
-  #myImg:hover {
-    /* opacity: 0.7; */
+  .myImg:hover {
     -webkit-filter: brightness(60%);
     filter: brightness(60%);
   }
 
+  .hide {
+    display: none;
+  }
+
+/* --------------------------------------------------------- MEDIA QUERIES FOR PROJECTS */
+  @media screen and (min-width: 768px) {
+    #projects {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 1em;
+      padding: 2em 0;
+    }
+  }
+
+  /* -------------------------------------------------------- CONTACT ------ */
   .contact {
     text-align: center;
-    /* margin: 100% 0; */
-    margin: 10% 0;
-    /* margin: 30px 0; */
+    margin: 10px 0;
   }
 
   /* --------------------------------------------------------- FOOTER -------- */
-
   footer {
     text-align: center;
     font-size: 0.6em;

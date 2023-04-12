@@ -17,9 +17,9 @@
         <nav>
             <div class="main-nav">
                 <ul>
-                    <li><a href="#contact">Contact</a></li> 
-                    <li><a href="#webDev">Projects</a></li>
                     <li><a href="#top">About</a></li>
+                    <li><a href="#webDev">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
                 </ul>
             </div>
         </nav>
@@ -59,80 +59,35 @@
                 <h3>Find me on <a href="https://www.linkedin.com/in/andrewhansen-dev/" target="_blank">Linkedin</a></h3>
                 <h3 class="pad-bottom"><a href="documents/andrew-hansen-resume.pdf" target="_blank">View my CV Resume</a></h3>
             </div>
-
         </div>
 
-        <!-- page navigation anchor -->
-        <a class="anchor" id="webDev"></a>
+    <div class="separator"></div>
+    <div class="separator"></div>
+
+<!-- NEW PROJECTS SECTION -->
+
+    <!-- page navigation anchor -->
+    <a class="anchor" id="webDev"></a>
+
+<div id="projects-container">
+    <div id="buttons">
+        <button class="button-value" onclick="setActive('all'), filterProject('all')">All</button>
+        <button class="button-value" onclick="setActive('game dev'), filterProject('gamedev')">Game Dev</button>
+        <button class="button-value" onclick="setActive('web dev'), filterProject('webdev')">Web Dev</button>
+        <button class="button-value" onclick="setActive('software'), filterProject('software')">Software</button>
+    </div>
+    <div id="projects"></div>
+
+
+</div>
+
         <div class="separator"></div>
-
-        <div id="projects-container">
-
-            <div class="project scroll-snap">
-                <h2>DATA ENTRY: Portal (In Progress)</h2>
-                <p>Lead Gameplay Programmer, Game Developer, January-May 2023</p>
-                <p>A VR puzzle mystery game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel <span class="italic">Portal</span> by Rob Swigart.</p>
-                <a href="https://docs.google.com/presentation/d/e/2PACX-1vSExmlMSVyKF1KezahpH4y2pzfIUzQarUE93jh6g313onwG96uaYGJ1UzhvHXquJey7XnTp8vQyxp2f/pub?start=true&loop=true&delayms=60000" target="_blank">
-                    <img class="myImages" id="myImg" src="img/Cloud_Gate_Portal.jpg" alt="DATA ENTRY: Portal Cloud Gate Concept Art" width="300" height="200"></a>
-                    <p class="small">Concept art by Gabrielle Griffin</p>
-            </div>
-
-            <div class="project scroll-snap">
-                <h2>Generative Ship Shooter Game</h2>
-                <p>Game Developer, May 2021</p>
-                <p>A miniature linear ship shooter game that is procedurally generated, built using Javascript in <a href="https://p5js.org/" target="_blank">P5.js.</a></p>
-                <a href="https://dtc-wsuv.org/ahansen20/final477/" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansenp5jsgame.png" alt="Space Shooter Game" width="300" height="200"></a>
-            </div>
-
-            <div class="project scroll-snap">
-                <h2>Blogging Application Backend</h2>
-                <p>Programmer, June 2022</p>
-                <p>A text based blogging application built entirely in C that allows users to create, count, search, print, and delete blog entries.</p>
-                <a href="https://github.com/axolotliterature/blog_C" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansenblog.png" alt="Text Based Blog" width="300" height="200"></a>
-            </div>
-            
-            <div class="project scroll-snap">
-                <h2>A Guided Tour of Hogwarts Filming Locations</h2>
-                <p>Web Developer, March 2021</p>
-                <p>A web based guided tour of the filming locations for Hogwarts Castle using <a href="https://www.mapbox.com/about/company/" target="_blank">Mapbox</a> API and HTML5, controlled with Javascript, and styled with CSS3.</p>
-                <a href="https://dtc-wsuv.org/ahansen20/map/" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansenmapbox.png" alt="Harry Potter Mapbox Tour"> </a>
-              </div>
-
-            <div class="project scroll-snap">
-                <h2>Coffee: Endangered Species</h2>
-                <p>Web Developer, December 2020</p>
-                <p>A basic website built with HTML and CSS that exhibits presentations on the dangers facing coffee plants worldwide.</p>
-                <a href="https://dtc-wsuv.org/ahansen20/Capstone%20Website/" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansencoffee.png" alt="Coffee: Endangered Species" width="300" height="200"></a>
-            </div>
-      
-            <div class="project scroll-snap">
-                <h2>Narrative Skrollr Project</h2>
-                <p>Web Developer, September 2020</p>
-                <p>This project utilizes the <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a> paralax scrolling Javascript plugin 
-                    to create a narrative experience introducing the viewer to The Outsider, from the Dishonored series</p>
-                <a href="https://dtc-wsuv.org/ahansen20/narrative/" target="_blank">
-                    <img class="myImages" id="myImg" src="img/ahansennarrative.png" alt="Narrative: The Outsider: Footer" width="300" height="200"></a>
-            </div>
-      
-            <div class="project scroll-snap">
-                <h2>Orange Chicken Recipe</h2>
-                <p>Wed Developer, October 2020</p>
-                <p>A simple responsive web page using HTML and CSS media queries to quickly and seamlessly adapt the page layout according to screen size.</p>
-                <a href="https://dtc-wsuv.org/ahansen20/recipe/" target="_blank">
-                <img class="myImages" id="myImg" src="img/ahansenrecipe.png" alt="Recipe: Full Page" width="300" height="200"></a>
-            </div>
-        </div>
-
         <div class="separator"></div>
 
         <!-- page navigation anchor -->
         <a class="anchor" id="contact"></a>
 
-        <div class="container contact scroll-snap">
+        <div class="container contact">
             <h1 class="pad-bottom">AndrewHansen.toSource()</h1>
             <div>
                 <h3><a href="mailto:andrewhansen.dev@gmail.com">Email</a></h3>
@@ -160,9 +115,8 @@
     </footer>
 
 
-    <script>
-
-    </script>
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 
