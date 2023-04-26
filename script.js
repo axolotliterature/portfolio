@@ -5,7 +5,7 @@ let projects = {
             category: "gamedev",
             role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
             info: "A VR puzzle mystery game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
-            webLink: "https://docs.google.com/presentation/d/e/2PACX-1vSExmlMSVyKF1KezahpH4y2pzfIUzQarUE93jh6g313onwG96uaYGJ1UzhvHXquJey7XnTp8vQyxp2f/pub?start=true&loop=true&delayms=60000",
+            webLink: "https://dtc-wsuv.org/projects/data-entry-portal/",
             image: "img/Cloud_Gate_Portal.jpg",
             imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
         },
