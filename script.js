@@ -1,10 +1,10 @@
 let projects = {
     data:[
             {
-            projectName: "DATA ENTRY: Portal (In Progress)",
+            projectName: "DATA ENTRY: PORTAL (In Progress)",
             category: "gamedev",
             role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
-            info: "A VR puzzle mystery game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
+            info: "A VR mystery puzzle game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
             webLink: "https://dtc-wsuv.org/projects/data-entry-portal/",
             image: "img/Cloud_Gate_Portal.jpg",
             imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
@@ -77,7 +77,6 @@ for(let i of projects.data){
     imgContainer.classList.add("image-container");
 
     //img tag with attributes
-
     //creates anchor tag
     let weblink = document.createElement("a");
     //creates image
@@ -87,7 +86,7 @@ for(let i of projects.data){
     image.setAttribute("alt", i.imageAlt);
     //appends image to anchor
     weblink.appendChild(image);
-    //sets anchor href and open in new tab
+    //sets anchor href and open target in new tab
     weblink.setAttribute("href", i.webLink);
     weblink.setAttribute("target", "_blank");   
     //appends anchor to imgContainer
@@ -98,13 +97,13 @@ for(let i of projects.data){
     //creates content container
     let container = document.createElement("div");
     container.classList.add("container");
-    //project name
+    //adds project name
     let name = document.createElement("h2");
     name.classList.add("projectName");
     name.innerText = i.projectName;
     container.appendChild(name);
-    //role
-    let role = document.createElement("p");
+    //adds role
+    let role = document.createElement("h3");
     role.innerText = i.role;
     container.appendChild(role);
     //adds project info
