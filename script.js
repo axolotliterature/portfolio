@@ -10,6 +10,15 @@ let projects = {
             imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
         },
         {
+            projectName: "DnD PDF Reader",
+            category: "webdev",
+            role: "Web Developer, Programmer, May 2023",
+            info: "A browser-based PDF Reader with a collapsible dice roll simulator sidebar built in JavaScript with Mozilla's PDF.js library.",
+            webLink: "https://dtc-wsuv.org/ahansen20/dndpdfreader/",
+            image: "img/ahansendndpdfreader.png",
+            imageAlt: "DnD PDF Reader",
+        },
+        {
             projectName: "Generative Ship Shooter Game",
             category: "gamedev",
             role: "Game Developer, May 2021",
@@ -66,6 +75,7 @@ let projects = {
     ]
 }
 
+//create project cards and append to page
 for(let i of projects.data){
     //creates cards
     let card = document.createElement("div");
