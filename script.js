@@ -19,6 +19,24 @@ let projects = {
             imageAlt: "DnD PDF Reader",
         },
         {
+            projectName: "Lizard Lab",
+            category: "gamedev",
+            role: "Game Developer, Gameplay Programmer, June 2023",
+            info: "A lizard themed idle game experience designed and created under \"mutation\" constraints during the June '23 Summer Slow Jam.",
+            webLink: "https://cmdcstudios.itch.io/lizard-lab",
+            image: "img/lizardlab.png",
+            imageAlt: "Lizard Lab",
+        },
+        {
+            projectName: "TESV:Skyrim Dog Follower Mod",
+            category: "gamedev",
+            role: "Game Developer, Dec 2022",
+            info: "This mod creates a learnable spell to summon a conjurable dog as a follower.",
+            webLink: "https://www.nexusmods.com/skyrim/mods/115972/",
+            image: "img/thegoodestboysit.png",
+            imageAlt: "Skyrim Dog Follower Mod",
+        },
+        {
             projectName: "Generative Ship Shooter Game",
             category: "gamedev",
             role: "Game Developer, May 2021",
@@ -28,7 +46,7 @@ let projects = {
             imageAlt: "Space Shooter Game",
         },
         {
-            projectName: "Blogging Application Backend",
+            projectName: "Blogging Application",
             category: "software",
             role: "Programmer, June 2022",
             info: "A text based blogging application built entirely in C that allows users to create, count, search, print, and delete blog entries.",
