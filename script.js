@@ -1,12 +1,12 @@
 let projects = {
     data:[
             {
-            projectName: "DATA ENTRY: PORTAL (In Progress)",
+            projectName: "DATA ENTRY: PORTAL",
             category: "gamedev",
             role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
             info: "A VR mystery puzzle game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
             webLink: "https://dtc-wsuv.org/projects/data-entry-portal/",
-            image: "img/Cloud_Gate_Portal.jpg",
+            image: "img/Cloud_Gate_Portal.jpeg",
             imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
         },
         {
@@ -24,7 +24,7 @@ let projects = {
             role: "Game Developer, Gameplay Programmer, June 2023",
             info: "A lizard themed idle game experience designed and created under \"mutation\" constraints during the June '23 Summer Slow Jam.",
             webLink: "https://cmdcstudios.itch.io/lizard-lab",
-            image: "img/lizardlab.png",
+            image: "img/lizardlab.jpeg",
             imageAlt: "Lizard Lab",
         },
         {
@@ -33,7 +33,7 @@ let projects = {
             role: "Game Developer, Dec 2022",
             info: "This mod creates a learnable spell to summon a conjurable dog as a follower.",
             webLink: "https://www.nexusmods.com/skyrim/mods/115972/",
-            image: "img/thegoodestboysit.png",
+            image: "img/thegoodestboysit.jpeg",
             imageAlt: "Skyrim Dog Follower Mod",
         },
         {
@@ -60,7 +60,7 @@ let projects = {
             role: "Web Developer, March 2021",
             info: "A web based guided tour of the filming locations for Hogwarts Castle using Mapbox API and HTML5, controlled with Javascript, and styled with CSS3.",
             webLink: "https://dtc-wsuv.org/ahansen20/map/",
-            image: "img/ahansenmapbox.png",
+            image: "img/ahansenmapbox.jpeg",
             imageAlt: "Harry Potter Mapbox Tour",
         },
         {
@@ -69,7 +69,7 @@ let projects = {
             role: "Web Developer, December 2020",
             info: "A basic website built with HTML and CSS that exhibits presentations on the dangers facing coffee plants worldwide.",
             webLink: "https://dtc-wsuv.org/ahansen20/Capstone%20Website/",
-            image: "img/ahansencoffee.png",
+            image: "img/ahansencoffee.jpeg",
             imageAlt: "Coffee: Endangered Species",
         },
         {
