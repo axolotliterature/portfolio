@@ -1,13 +1,13 @@
 let projects = {
     data:[
-            {
-            projectName: "DATA ENTRY: PORTAL",
-            category: "gamedev",
-            role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
-            info: "A VR mystery puzzle game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
-            webLink: "https://dtc-wsuv.org/projects/data-entry-portal/",
-            image: "img/Cloud_Gate_Portal.jpeg",
-            imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
+        {
+            projectName: "PokéAPI Pokédex (In Progress)",
+            category: "webdev",
+            role: "Web Developer, Programmer, July 2023",
+            info: "A browser based Pokédex system built in React.js with Javascript, using the Pokémon PokéAPI v2.",
+            webLink: "https://github.com/axolotliterature/pokedex",
+            image: "img/ahansenpokedex.png",
+            imageAlt: "Pokedex",
         },
         {
             projectName: "DnD PDF Reader",
@@ -19,6 +19,15 @@ let projects = {
             imageAlt: "DnD PDF Reader",
         },
         {
+            projectName: "DATA ENTRY: PORTAL",
+            category: "gamedev",
+            role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
+            info: "A VR mystery puzzle game built in Unreal Engine 5 that reimagines the 1986 hypertext game and Science Fiction novel Portal by Rob Swigart.",
+            webLink: "https://dtc-wsuv.org/projects/data-entry-portal/",
+            image: "img/Cloud_Gate_Portal.jpeg",
+            imageAlt: "DATA ENTRY: Portal Cloud Gate Concept Art",
+        },
+        {
             projectName: "Lizard Lab",
             category: "gamedev",
             role: "Game Developer, Gameplay Programmer, June 2023",
@@ -26,6 +35,24 @@ let projects = {
             webLink: "https://cmdcstudios.itch.io/lizard-lab",
             image: "img/lizardlab.jpeg",
             imageAlt: "Lizard Lab",
+        },
+        {
+            projectName: "Flappy Bird Clone",
+            category: "gamedev",
+            role: "Game Developer, March 2022",
+            info: "A simple clone of the Flappy Bird game built in Unity with C# with input controller, game audio, score controller, collision detection, and moving pipes to introduce an element of difficulty.",
+            webLink: "https://dtc-wsuv.org/ahansen20/flappybird/",
+            image: "img/ahansenflappybirdsg.png",
+            imageAlt: "Flappy Bird Game Clone",
+        },
+        {
+            projectName: "Blogging Application",
+            category: "software",
+            role: "Programmer, June 2022",
+            info: "A text based blogging application built entirely in C that allows users to create, count, search, print, and delete blog entries.",
+            webLink: "https://github.com/axolotliterature/blog_C",
+            image: "img/ahansenblog.png",
+            imageAlt: "Text Based Blog",
         },
         {
             projectName: "TESV:Skyrim Dog Follower Mod",
@@ -44,15 +71,6 @@ let projects = {
             webLink: "https://dtc-wsuv.org/ahansen20/final477/",
             image: "img/ahansenp5jsgame.png",
             imageAlt: "Space Shooter Game",
-        },
-        {
-            projectName: "Blogging Application",
-            category: "software",
-            role: "Programmer, June 2022",
-            info: "A text based blogging application built entirely in C that allows users to create, count, search, print, and delete blog entries.",
-            webLink: "https://github.com/axolotliterature/blog_C",
-            image: "img/ahansenblog.png",
-            imageAlt: "Text Based Blog",
         },
         {
             projectName: "A Guided Tour of Hogwarts Filming Locations",
