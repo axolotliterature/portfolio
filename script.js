@@ -19,6 +19,15 @@ let projects = {
             imageAlt: "DnD PDF Reader",
         },
         {
+            projectName: "React List Application",
+            category: "webdev",
+            role: "Web Developer, July 2023",
+            info: "A simple task-list application built in React using JavaScript.",
+            webLink: "https://github.com/axolotliterature/ListApp",
+            image: "img/ahansenlistapp.png",
+            imageAlt: "List Application",
+        },
+        {
             projectName: "DATA ENTRY: PORTAL",
             category: "gamedev",
             role: "Lead Gameplay Programmer, Game Developer, January-May 2023",
